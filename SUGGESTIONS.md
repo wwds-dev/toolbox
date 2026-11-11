@@ -13,3 +13,9 @@ Status: `IDEA` · `CONSIDERING` · `PLANNED` · `DONE` · `REJECTED`
 | Suggestion | When |
 |---|---|
 | Keep each utility as its own nested repository/submodule | Sep 2026 |
+| README Layout section: one map of all three members and their current paths | Nov 2026 |
+
+## Rejected
+
+| Suggestion | Why |
+|---|---|
