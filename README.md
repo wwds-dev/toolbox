@@ -57,16 +57,15 @@ constant at the top of the script, edited before each run.
 
 | Path | What it does | Paths currently in the code |
 |---|---|---|
-| `dpi/dpi_resize_exact.py` | Every `.png` → RGBA, resized (stretched, aspect ratio not kept) to exactly 3600×4800 px — 12"×16" at 300 DPI — and saved as PNG with 300-DPI metadata. A failing file is reported and skipped | in `~/Documents/Websites/altmerch.store/RAW`; out `/Users/as/Documents/Websites/altmerch.store/changed_DPI` |
-| `dpi/dpi_fit_canvas.py` | `.png`/`.jpg`/`.jpeg` scaled proportionally and centred on a 3600×4800 px, 300-DPI canvas (black by default, `background_color`) — no distortion | in `~/Documents/Websites/altmerch.store/Sweet Poison`; out intended as `…/Sweet Poison/output_ready_for_print` (see `image_tools/TODO.md`: the join is broken) |
-| `rename/rename_for_print.py` | Renames the images in the source folder **in place** to `sweet_poison_001`, `_002`, …, numbering on from the highest index already in the target folder; both folders must exist; stops at a name collision | source `/Users/as/Documents/Websites/altmerch.store/Sweet Poison`; target `…/Sweet Poison/ready_for_print` |
+| `dpi/dpi_resize_exact.py` | Every `.png` → RGBA, resized (stretched, aspect ratio not kept) to exactly 3600×4800 px — 12"×16" at 300 DPI — and saved as PNG with 300-DPI metadata. A failing file is reported and skipped | in `~/Documents/lab/websites/altmerch.store/RAW`; out `/Users/as/Documents/lab/websites/altmerch.store/changed_DPI` |
+| `dpi/dpi_fit_canvas.py` | `.png`/`.jpg`/`.jpeg` scaled proportionally and centred on a 3600×4800 px, 300-DPI canvas (black by default, `background_color`) — no distortion | in `~/Documents/lab/websites/altmerch.store/Sweet Poison`; out intended as `…/Sweet Poison/output_ready_for_print` (see `image_tools/TODO.md`: the join is broken) |
+| `rename/rename_for_print.py` | Renames the images in the source folder **in place** to `sweet_poison_001`, `_002`, …, numbering on from the highest index already in the target folder; both folders must exist; stops at a name collision | source `/Users/as/Documents/lab/websites/altmerch.store/Sweet Poison`; target `…/Sweet Poison/ready_for_print` |
 | `move/move_small_images.py` | Moves `.jpg`/`.jpeg`/`.png`/`.tiff`/`.bmp` images ≤200×200 px into a `Delete` subfolder, then posts a macOS notification | `~/Downloads/Pictures/Cyberpunk` → `…/Cyberpunk/Delete` |
 | `move/move_small_images.workflow` | Automator Quick Action — it runs `~/Documents/Tech/scripts/move_images.py`, not the script in this repo | |
 | `requirements.txt`, `*/requirements.txt` | Pillow (unpinned at the root, `pillow==12.2.0` in each subfolder) | |
 
-> The `dpi/` and `rename/` paths were changed to `~/Documents/Websites/altmerch.store/`
-> on 2026-10-11, but the store folder lives at `~/Documents/Business/Merch/altmerch.store`.
-> Check the paths before a run; this is open in `image_tools/TODO.md`.
+> The `dpi/` and `rename/` paths point at `~/Documents/lab/websites/altmerch.store/`, where the
+> store folder lives since 2026-11-17 (`~/Documents/Business/Merch/altmerch.store` is a symlink to it).
 
 ## Cloning
 
