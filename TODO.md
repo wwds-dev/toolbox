@@ -5,6 +5,10 @@
 
 ## Active
 
+- [ ] `P3` `testing` `@ai` **Code-level readiness audit (promises vs code)** of the three
+  utilities: check each README's and guide's claims against the code (`unblock_tracker`'s
+  follower diff is already known to be dead code); findings go to each utility's own `TODO.md`.
+  Own chat, Sonnet or Opus medium, ~20–40 min. Requested 2026-11-18 after the lab-wide doc sweep.
 - [ ] `P3` `feature` `@ai` **Decide whether Toolbox needs its own launcher.** The utilities
   are currently reached through Lab Hub or run directly; build a separate launcher only
   if that adds value beyond Lab Hub's Tools tab.
